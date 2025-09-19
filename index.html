@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quick Links</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            padding: 20px;
+        }
+        
+        .container {
+            max-width: 600px;
+            margin: 0 auto;
+            background: white;
+            border-radius: 20px;
+            box-shadow: 0 20px 40px rgba(0,0,0,0.1);
+            overflow: hidden;
+        }
+        
+        .header {
+            background: linear-gradient(45deg, #4CAF50, #45a049);
+            color: white;
+            padding: 30px 20px;
+            text-align: center;
+        }
+        
+        .header h1 {
+            font-size: 2rem;
+            margin-bottom: 10px;
+        }
+        
+        .header p {
+            opacity: 0.9;
+            font-size: 1.1rem;
+        }
+        
+        .links-container {
+            padding: 30px 20px;
+        }
+        
+        .link-item {
+            display: block;
+            background: #f8f9fa;
+            border: 2px solid transparent;
+            border-radius: 15px;
+            padding: 20px;
+            margin-bottom: 15px;
+            text-decoration: none;
+            color: #333;
+            transition: all 0.3s ease;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .link-item::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: -100%;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(90deg, transparent, rgba(255,255,255,0.8), transparent);
+            transition: left 0.5s ease;
+        }
+        
+        .link-item:hover::before {
+            left: 100%;
+        }
+        
+        .link-item:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+            border-color: #4CAF50;
+        }
+        
+        .link-title {
+            font-size: 1.2rem;
+            font-weight: 600;
+            margin-bottom: 8px;
+            color: #2c3e50;
+        }
+        
+        .link-url {
+            color: #7f8c8d;
+            font-size: 0.9rem;
+            word-break: break-all;
+        }
+        
+        .link-icon {
+            display: inline-block;
+            width: 20px;
+            height: 20px;
+            margin-right: 10px;
+            vertical-align: middle;
+        }
+        
+        @media (max-width: 480px) {
+            .container {
+                margin: 10px;
+                border-radius: 15px;
+            }
+            
+            .header {
+                padding: 20px 15px;
+            }
+            
+            .header h1 {
+                font-size: 1.5rem;
+            }
+            
+            .links-container {
+                padding: 20px 15px;
+            }
+            
+            .link-item {
+                padding: 15px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>Región Castilla y León</h1>
+            <p>Tiendas online de vinos selectos</p>
+        </div>
+        
+        <div class="links-container">
+            <a href="https://www.bodegaszifar.com/comprar/" class="link-item" target="_blank">
+                <div class="link-title">
+                    Bodegas Zifar
+                </div>
+                <div class="link-url">www.bodegaszifar.com/comprar/</div>
+            </a>
+            
+            <a href="https://cuatrorayas.es/tienda/" class="link-item" target="_blank">
+                <div class="link-title">
+                    Bodega Cuatro Rayas
+                </div>
+                <div class="link-url">cuatrorayas.es/tienda/</div>
+            </a>
+            
+            <a href="https://tienda.monteabellon.com/" class="link-item" target="_blank">
+                <div class="link-title">
+                    Bodegas y Viñedos Monteabellón
+                </div>
+                <div class="link-url">tienda.monteabellon.com/</div>
+            </a>
+            
+            <a href="https://tienda.dealberto.com/es/" class="link-item" target="_blank">
+                <div class="link-title">
+                    De Alberto Gutiérrez
+                </div>
+                <div class="link-url">tienda.dealberto.com/es/</div>
+            </a>
+            
+            <a href="https://www.tiendaellagardeisilla.com/" class="link-item" target="_blank">
+                <div class="link-title">
+                    El Lagar de Isilla
+                </div>
+                <div class="link-url">www.tiendaellagardeisilla.com/</div>
+            </a>
+            
+            <a href="https://www.almazcaramajara.com/" class="link-item" target="_blank">
+                <div class="link-title">
+                    Almazcara Majara
+                </div>
+                <div class="link-url">www.almazcaramajara.com/</div>
+            </a>
+            
+            <a href="https://tienda.rodriguezysanzo.com/tienda-vinos-online/" class="link-item" target="_blank">
+                <div class="link-title">
+                    Bodegas Rodríguez Y Sanzo
+                </div>
+                <div class="link-url">tienda.rodriguezysanzo.com/tienda-vinos-online/</div>
+            </a>
+            
+            <a href="https://anibaldeotero.es/tienda/" class="link-item" target="_blank">
+                <div class="link-title">
+                    Aníbal De Otero
+                </div>
+                <div class="link-url">anibaldeotero.es/tienda/</div>
+            </a>
+            
+            <a href="https://valdebodega.com/catalogo" class="link-item" target="_blank">
+                <div class="link-title">
+                    Bodegas Y Viñedos Valdebodega
+                </div>
+                <div class="link-url">valdebodega.com/catalogo</div>
+            </a>
+            
+            <a href="https://bodegaselhacedor.com/tienda/" class="link-item" target="_blank">
+                <div class="link-title">
+                    Bodegas El Hacedor
+                </div>
+                <div class="link-url">bodegaselhacedor.com/tienda/</div>
+            </a>
+        </div>
+    </div>
+</body>
+</html>
